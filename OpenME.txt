@@ -1,0 +1,6 @@
+This is my web devlope project ...
+open terminal for each
+go to client and server directory .
+hit the command line with :
+1.npm install
+2.npm run start
