@@ -1,0 +1,79 @@
+/* OrderPage.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5dc; 
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.error{
+  color: red;
+}
+
+.order-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.order-page h2 {
+  text-align: center;
+  color: #8b8000; 
+}
+
+.cart-items {
+  margin-bottom: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+.cart-item {
+  flex-direction: column;
+  align-items: flex-start;
+}
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item span {
+  display: block;
+  color: #556b2f; 
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.order-form button {
+  background-color: #8b8000; 
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.order-form button:hover {
+  background-color: #555; 
+}
