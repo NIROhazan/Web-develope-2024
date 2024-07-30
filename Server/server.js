@@ -3,7 +3,7 @@ const mongojs = require("mongojs");
 
 // Use the shared MongoDB server with the updated connection string format
 
-//If you use the shared mongodb server:
+//If you use the shared mongodb servera:
 const db = mongojs(
   "mongodb+srv://Student:webdev2024student@cluster0.uqyflra.mongodb.net/webdev2024"
 );
