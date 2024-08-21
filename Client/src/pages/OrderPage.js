@@ -88,7 +88,7 @@ const OrderPage = ({ cart, setCart }) => {
         {cart.map((item) => (
           <div key={item._id} className="cart-item">
             <span>
-              <img src={item.image} width="200" height="75" alt={item.name} />
+              <img src={item.image} width="180" height="180" alt={item.name} />
             </span>
             <span>{item.name}</span>
             <span>Quantity: {item.quantity}</span>
