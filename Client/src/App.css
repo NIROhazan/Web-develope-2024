@@ -1,6 +1,7 @@
 /* src/App.css */
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -47,7 +48,7 @@ body {
 }
 
 nav {
-  background-color: #ffcc00; /* צבע צהוב */
+  background-color: #ffcc00; 
   color: #fff;
   padding: 1rem;
   display: flex;
@@ -58,7 +59,7 @@ nav {
 nav .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ff0000; /* צבע אדום */
+
 }
 
 nav ul {
@@ -72,12 +73,12 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ff0000; /* צבע אדום */
+  color: #ff0000; 
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: #cc0000; /* גוון כהה יותר של אדום */
+  color: #cc0000; 
 }
 
 h1 {
@@ -113,18 +114,17 @@ h1 {
 }
 
 .product button {
-  background-color: #ffcc00; /* צבע צהוב */
-  color: #ff0000; /* צבע אדום */
+  background-color: #ffcc00;
+  color: #ff0000; 
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
 .product button:hover {
-  background-color: #ff9900; /* גוון כהה יותר של צהוב */
+  background-color: #ff9900; 
 }
 
-/* סגנונות רספונסיביים */
 @media (max-width: 1024px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -148,6 +148,7 @@ h1 {
 
   .cart-icon {
     margin-top: 1rem;
+    
   }
 
   .App-header {
