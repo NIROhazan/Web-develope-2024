@@ -4,8 +4,12 @@
   padding: 1rem;
   text-align: center;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(2, 41, 239, 0.868);
+}
 .product-item img {
   max-width: 100%;
   height: auto;
@@ -32,10 +36,8 @@
 }
 
 .product-item button:hover {
-  background-color: #4d4b48;
+  background-color: #08a306;
 }
-
-/* סגנונות רספונסיביים */
 @media (max-width: 768px) {
   .product-item {
     padding: 0.5rem;
