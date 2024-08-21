@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
-import shoplogo from "./images/storelogo.png";
 import ProductItem from "../components/ProductItem";
+const shopLogo = "/images/storelogo.png";
 
 const HomePage = ({ addToCart }) => {
   // State to manage the list of products
@@ -23,11 +23,14 @@ const HomePage = ({ addToCart }) => {
         return res.json();
       })
       .then((data) => {
-        // Filter out Orders from items (that have a `totalAmount` property)
+        //Filter out OrderID and Orders.
         const filteredData = data.filter(
-          (item) => !item.hasOwnProperty("totalAmount")
+          (item) => !item.hasOwnProperty("totalAmount" || "sequence_value")
         );
-        setProducts(filteredData);
+        const justItems = filteredData.filter(
+          (item) => !item.hasOwnProperty("sequence_value")
+        );
+        setProducts(justItems);
       })
       .catch((err) => {
         // Log any errors to the console
@@ -39,11 +42,11 @@ const HomePage = ({ addToCart }) => {
     <div>
       {/* Header image with store logo */}
       <div className="header-image">
-        <img src={shoplogo} alt="shoplogo" />
+        <img src={shopLogo} alt="shoplogo" />
       </div>
       {/* Slogan for the store */}
       <div className="slogan">
-        <h2>Welcome to our shoe store!!!</h2>
+        <h2>Welcome to our shoe store!</h2>
         <p>Best online shoe store. Special offers and free shipping.</p>
       </div>
       {/* Product grid to display the list of products */}
