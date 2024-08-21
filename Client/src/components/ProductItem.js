@@ -9,7 +9,7 @@ const ProductItem = ({ product, addToCart }) => {
       <h2>{product.name}</h2>
       <p>{product.description}</p>
       <p>{product.price} NIS</p>
-      <button onClick={() => addToCart(product)}>ADD</button>
+      <button onClick={() => addToCart(product)}>ADD TO CART</button>
     </div>
   );
 };
