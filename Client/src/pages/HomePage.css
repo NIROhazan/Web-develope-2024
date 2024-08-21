@@ -2,6 +2,7 @@
 .header-image {
   text-align: center;
   margin: 2rem 0;
+  display: flex;
 }
 
 .header-image img {
@@ -12,19 +13,21 @@
 .slogan {
   text-align: center;
   margin: 2rem 0;
+  display: flex;
 }
 
 .product-grid {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 2rem;
+  display: flex;
 }
 
 .product {
   border: 1px solid #ddd;
   padding: 1rem;
   text-align: center;
+  display: flex;
 }
 
 .product img {
@@ -65,7 +68,6 @@
   }
 }
 
-/* התאמות נוספות */
 @media (max-width: 480px) {
   .header-image img {
     width: 100%;
