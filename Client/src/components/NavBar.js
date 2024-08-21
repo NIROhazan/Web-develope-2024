@@ -9,11 +9,9 @@ const NavBar = ({ toggleCart, cartQuantity, totalPrice }) => {
     <nav className="nav-bar">
       <li>
         {/* Special Text Container */}
-        <div className="special-container">Our Quality Your Plesure </div>
-      </li>
-      <li>
-        {/* Logo for the shoe store */}
-        <div className="logo"> "Lech-lecha" Shoe Store </div>
+        <div className="logo">
+          "Lech-lecha" Shoe Store - Our Quality Your Plesure{" "}
+        </div>
       </li>
       <ul>
         {/* Navigation link to the Home Page */}
