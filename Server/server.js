@@ -3,13 +3,13 @@ const mongojs = require("mongojs");
 
 // Use the shared MongoDB server with the updated connection string format
 
-//If you use the shared mongodb servera:
+//If you use the shared mongodb server:
 const db = mongojs(
   "mongodb+srv://Student:webdev2024student@cluster0.uqyflra.mongodb.net/webdev2024"
 );
 
 // Edit this line to point to your specific collection
-const myShop = db.collection("final_<Nir_Hazan_Omer_Bidush>");
+const myShop = db.collection("final_<Nir_Hazan_Omer_Bidoush>");
 
 const app = express();
 app.use(express.json()); // Middleware to parse JSON body
