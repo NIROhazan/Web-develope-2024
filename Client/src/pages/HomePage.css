@@ -2,7 +2,7 @@
 .header-image {
   text-align: center;
   margin: 2rem 0;
-  display: flex;
+
 }
 
 .header-image img {
@@ -13,14 +13,13 @@
 .slogan {
   text-align: center;
   margin: 2rem 0;
-  display: flex;
 }
 
 .product-grid {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 2rem;
-  display: flex;
+ 
 }
 
 .product {
