@@ -20,7 +20,14 @@ function App() {
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
-
+  // Function to change the quantity of a product in the cart
+  const changeQuantity = (product, quantity) => {
+    setCart((prevCart) => {
+      return prevCart.map((item) =>
+        item._id === product._id ? { ...item, quantity: quantity } : item
+      );
+    });
+  };
   // Function to add a product to the cart
   const addToCart = (product) => {
     setCart((prevCart) => {
@@ -96,6 +103,7 @@ function App() {
           addToCart={addToCart}
           removeFromCart={removeFromCart}
           deleteFromCart={deleteFromCart}
+          changeQuantity={changeQuantity}
           toggleCart={toggleCart}
         />
       )}
