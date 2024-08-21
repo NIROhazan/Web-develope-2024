@@ -18,11 +18,6 @@
 
 .nav-bar a:hover {
   text-decoration: underline;
-}.cart-icon{
-  color:  #150557;;
-  text-decoration:solid;
-  margin: 0 20px;
-  
   
 }.logo{
   font-size: 2em;
@@ -66,4 +61,28 @@ body {
   margin: 20px 10px;
   max-width: 600px;
   display: flex;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.special-container:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(203, 0, 0, 0.899);
+}
+.cart-icon{
+  font-size:small;
+  color: #ff0000e1; 
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.5;
+  border: 2px solid #ef0101;
+  padding: 20px;
+  background-color: #150557;
+  border-radius: 10px;
+  margin: 20px 10px;
+  max-width: 600px;
+  display: flex;
+ 
+}
+.cart-icon:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 3, 203, 0.899);
 }
